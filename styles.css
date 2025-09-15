@@ -1,0 +1,32 @@
+/* Imports */
+@font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("./assets/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf") format("truetype");
+}
+
+/* Normalizing CSS */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    background: hsl(243, 96%, 9%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
