@@ -18,7 +18,7 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="container flex">
       <div class="logo">
         <img src="./assets/images/logo.svg" alt="Weather Now logo">
       </div>
@@ -26,24 +26,42 @@
       <div class="units-dropdown">
         <button class="units-button">Units</button>
         <div class="units-menu">
-          <div class="unit-option">
-            <button class="unit-switch">Switch to Imperial/Metric</button>
-          </div>
-          <div class="unit-option">
+            <button class="unit-switch">Switch to Imperial</button>
+            <div class="unit-option">
             <span>Temperature</span>
-            <button class="temp-celsius">Celsius (°C)</button>
-            <button class="temp-fahrenheit">Fahrenheit (°F)</button>
-          </div>
-          <div class="unit-option">
+            <button class="temp-celsius active">
+              <p>Celsius (°C)</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            <button class="temp-fahrenheit">
+              <p>Fahrenheit (°F)</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            </div>
+            <div class="separator"></div>
+            <div class="unit-option">
             <span>Wind Speed</span>
-            <button class="wind-kmh">km/h</button>
-            <button class="wind-mph">mph</button>
-          </div>
-          <div class="unit-option">
+            <button class="wind-kmh active">
+              <p>km/h</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            <button class="wind-mph">
+              <p>mph</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            </div>
+            <div class="separator"></div>
+            <div class="unit-option">
             <span>Precipitation</span>
-            <button class="precip-mm">Millimeters (mm)</button>
-            <button class="precip-in">Inches (in)</button>
-          </div>
+            <button class="precip-mm active">
+              <p>Millimeters (mm)</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            <button class="precip-in">
+              <p>Inches (in)</p>
+              <img src="./assets/images/icon-checkmark.svg" alt="checkmark">
+            </button>
+            </div>
       </div>
     </div>
   </header>
