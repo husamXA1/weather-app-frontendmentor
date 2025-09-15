@@ -42,6 +42,22 @@ header .container {
     padding: 1.5rem 0;
 }
 
+header .units-menu button,
+header .units-button {
+    background: hsl(243, 27%, 20%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    padding: 1em;
+    color: hsl(0, 0%, 100%);
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 header .units-dropdown {
     position: relative;
     color: hsl(240, 6%, 70%);
@@ -73,24 +89,18 @@ header .units-menu .separator {
 }
 
 header .units-menu button {
-    display: flex;
     justify-content: space-between;
     gap: 2em;
-    background: none;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    width: 100%;
     padding: 0.5em;
     margin-bottom: 0.25em;
-    border-radius: 0.5em;
-    cursor: pointer;
     text-align: left;
-    font-family: "DM Sans", sans-serif;
+    width: 100%;
 }
 
 
 header .units-menu button.active,
-header .units-menu button:hover {
+header .units-menu button:hover,
+header .units-button:hover {
     background-color: hsl(243, 23%, 24%);
 }
 
