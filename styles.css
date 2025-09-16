@@ -69,11 +69,22 @@ header .units-menu {
     position: absolute;
     bottom: -10px;
     right: 0;
-    transform: translateY(100%);
+    translate: 0 100%;
+    scale: 0;
+    transition: scale 0.3s;
+    transform-origin: 100% 0;
     background: hsl(243, 27%, 20%);
     padding: 0.5em;
     border-radius: 0.75em;
     width: max-content;
+}
+
+header .units-dropdown.active .units-menu {
+    scale: 1;
+}
+
+header .units-dropdown.active .units-button img {
+    transform: scaleY(-100%);
 }
 
 header .unit-option {
