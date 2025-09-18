@@ -201,3 +201,44 @@ header .units-menu span {
         flex-direction: row;
     }
 }
+
+/* Weather card */
+.weather-card {
+    background: url("/assets/images/bg-today-small.svg") no-repeat center/cover;
+    border-radius: 1.5em;
+    padding: 2em;
+    margin: 2em 0;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-card .text {
+    font-family: "DM Sans", sans-serif;
+}
+
+.weather-card .text h3 {
+    font-size: 1.5rem;
+}
+
+.weather-card .text p {
+    font-size: 1rem;
+    color: hsl(250, 6%, 84%);
+    margin-top: 0.25em;
+}
+
+.weather-card .col {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.weather-card img {
+    width: 100px;
+    height: 100px;
+}
