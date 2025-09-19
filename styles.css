@@ -202,6 +202,25 @@ header .units-menu span {
     }
 }
 
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        gap: 2em;
+    }
+    main .col {
+        width: 100%;
+    }
+    main .hourly-forecast {
+        width: 50%;
+    }
+}
+
 /* Weather card */
 .weather-card {
     background: url("/assets/images/bg-today-small.svg") no-repeat center/cover;
@@ -236,9 +255,19 @@ header .units-menu span {
     align-items: center;
     font-size: 4rem;
     font-weight: 500;
+    width: fit-content;
 }
 
 .weather-card img {
     width: 100px;
     height: 100px;
+}
+
+@media (min-width: 600px) {
+    .weather-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 3em;
+        background: url("/assets/images/bg-today-large.svg") no-repeat center/cover;
+    }
 }
