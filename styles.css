@@ -35,6 +35,10 @@ body {
     display: flex;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Header section */
 header .container {
     justify-content: space-between;
@@ -307,4 +311,40 @@ main {
     .weather-details .detail .value {
         font-size: 2rem;
     }
+}
+
+/* Daily forecast */
+.daily-forecast {
+    margin: 2em 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.daily-forecast h3 {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.daily-forecast .days-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+.day {
+    background: hsl(243, 27%, 20%);
+    border: 1px solid hsl(243, 23%, 30%);
+    border-radius: 1em;
+    padding: 1em 0.75em;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    width: 100px;
+    max-width: 30%;
+}
+
+.day .flex {
+    justify-content: space-between;
+}
+
+.day .temp-low {
+    color: hsl(240, 6%, 70%)
 }
